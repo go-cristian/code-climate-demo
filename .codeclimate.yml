@@ -3,10 +3,13 @@ engines:
     enabled: true
     channel: "beta"
     config: 'checkstyle.xml'
+    exclude_paths:
+    - "**/gen/**"
   pmd:
     enabled: true
     channel: "beta"
 
 ratings:
   paths:
-  - "**.java"
+  - "src"
+  - "**/*.java"
